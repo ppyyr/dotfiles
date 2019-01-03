@@ -59,12 +59,12 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
-input "4152:4973:SteelSeries_SteelSeries_Guild_Wars_2_Gaming_Mouse" {
+input "1133:50475:Logitech_USB_Receiver" {
     natural_scroll enabled
     middle_emulation enabled
 }
 
-input "1133:50475:Logitech_USB_Receiver" {
+input "6127:24644:ThinkPad_USB_Laser_Mouse" {
     natural_scroll enabled
     middle_emulation enabled
 }
@@ -95,6 +95,16 @@ input "1133:50475:Logitech_USB_Receiver" {
 
     # exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+    # browsers--firefox chromium
+    bindsym $mod+Shift+f exec firefox
+    bindsym $mod+Shift+b exec chromium
+
+    # Audio controls
+    bindsym XF86AudioRaiseVolume exec amixer -q set Master 1%+ unmute
+    bindsym XF86AudioLowerVolume exec amixer -q set Master 1%- unmute
+    bindsym XF86AudioMute exec amixer -q set Master toggle
+
 #
 # Moving around:
 #

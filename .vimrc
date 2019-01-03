@@ -2,6 +2,7 @@ set paste
 set pastetoggle=<F2>
 set rnu
 set number
+set mouse=a
 set t_Co=256        	"set colors to 256
 syntax enable		"use syntax highlighting
 
