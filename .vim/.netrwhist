@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/usr/include/nvtop'
+let g:netrw_dirhist_2='/etc/plymouth'
+let g:netrw_dirhist_3='/home/msjche/.config/mps-youtube'
+let g:netrw_dirhist_4='/home/msjche/.newsbeuter'
+let g:netrw_dirhist_5='/home/sora/.config'
+let g:netrw_dirhist_6='/home/sora'
+let g:netrw_dirhist_7='/home/sora/.config/awesome/themes/powerarrow-dark'
+let g:netrw_dirhist_8='/home/sora/.proxychains'
